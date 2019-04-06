@@ -10,4 +10,7 @@ body, html {
 * {
   box-sizing: border-box; }
 
+button, a {
+  transition: background-color .3s, color .3s, border-color .3s; }
+
 /*# sourceMappingURL=settings.css.map */

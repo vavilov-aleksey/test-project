@@ -7,19 +7,18 @@ const ButtonParent = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  border: 1px solid var(--color-gray);
+  border: 1px solid var(--color-white-f2);
   padding-left: 40px;
   padding-right: 40px;
   color: var(--color-accent);
   background-color: var(--color-white);
-  transition: background-color .3s, border-color .3s;
   cursor: pointer;
   outline: none;
   height: 35px;
   
   &:hover {
     border-color: var(--color-accent);
-    background-color: #FDF4ED;
+    background-color: var(--color-pink);
   }
 
   &:active {

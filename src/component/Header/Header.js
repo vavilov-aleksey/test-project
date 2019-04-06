@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Headers = styled.header`
+const HeaderParent = styled.header`
   height: 64px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@ const Headers = styled.header`
 export const Header = () => {
   return (
     <React.Fragment>
-        <Headers>WeatherMap</Headers>
+        <HeaderParent>WeatherMap</HeaderParent>
     </React.Fragment>
 )
 };
