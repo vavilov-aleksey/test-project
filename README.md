@@ -4,7 +4,7 @@
 
     Создать простое одностраничное веб-приложение о погоде
     
-    Данные брать с сайта [openweathermap.org](https://openweathermap.org/)
+    Данные брать с сайта https://openweathermap.org
 
 #### Форма добавления города:
 
