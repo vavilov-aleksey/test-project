@@ -1,0 +1,14 @@
+body, html {
+  min-height: 100vh;
+  min-width: 768px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
