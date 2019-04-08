@@ -1,9 +1,10 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {Header} from "./component/Header/Header";
-import {FormAdd} from "./component/FormAdd/FormAdd";
-import {Table} from "./component/Table/Table";
+import FormAdd from "./component/FormAdd/FormAdd";
+import Table from "./component/Table/Table";
 
-class App extends Component {
+export default class App extends PureComponent {
+
   render() {
     return (
       <React.Fragment>
@@ -17,4 +18,3 @@ class App extends Component {
   }
 }
 
-export default App;

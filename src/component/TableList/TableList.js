@@ -1,24 +1,30 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import {Button} from "../Button/Button";
+import {ReactComponent as Logo} from '../../images/icon-up.svg';
+import {ReactComponent as ReactLogo} from '../../images/icon-down.svg';
 
+export const TableList = ({children, sort, sortType, onClick}) => {
 
-export const TableList = ({children, btn, sort}) => {
   return (
-    !btn ?
-      <div className="table__cell">
-        {children}
-        {sort && '>'}
-      </div>
-      :
-      <div className="table__cell"><Button>Удалить</Button></div>
+    <div className="table__cell" onClick={sort ? onClick : () => {}}>
+      {children}
+      {sort ?
+        <div className='table__sort'>
+          <Logo className={sortType === 'Up' ? 'active' : ''}/>
+          <ReactLogo className={sortType === 'Down' ? 'active' : ''}/>
+        </div>
+        : ''
+      }
+    </div>
   )
 };
 
 TableList.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  onClick: PropTypes.func
 };
 
 TableList.defaultProps = {
-  children: ''
+  children: '',
+  onClick: ()=> {}
 };

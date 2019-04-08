@@ -34,6 +34,21 @@
   .table__cell{
     font-size: 14px;
     color: var(--color-gray);
+    display: flex;
+    align-items: center;
+  }
+
+  .table__cell:first-child{
+    cursor: pointer;
+  }
+
+  .table__cell:hover{
+    svg{
+      opacity: .6;
+    }
+    svg.active{
+      opacity: 1;
+    }
   }
 }
 
@@ -41,6 +56,23 @@
   display: flex;
   border-bottom: 1px solid var(--color-white-f2);
   padding: 15px;
-  min-height: 60px;
+  min-height: 66px;
   align-items: center;
+}
+
+.table__sort{
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0 5px;
+  cursor: pointer;
+
+  svg{
+    width: 10px;
+    height: 10px;
+    opacity: .4;
+
+    &.active{
+      opacity: 1;
+    }
+  }
 }

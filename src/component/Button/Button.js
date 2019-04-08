@@ -58,8 +58,6 @@ ButtonParent.propTypes = {
 
 ButtonParent.defaultProps = {
   children: 'Default button',
-  onClick: () => {
-    console.log('click test')
-  },
+  onClick: () => {},
   disabled: false
 };
